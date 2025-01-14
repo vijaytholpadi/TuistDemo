@@ -22,7 +22,11 @@ let project = Project(
             dependencies: [
                 .sharedModel,
                 .networking,
-                .external(name: "Alamofire")
+                .external(name: "Alamofire"),
+                .external(name: "SnapKit"),
+                .external(name: "RxSwift"),
+                .external(name: "RxCocoa"),
+                .external(name: "Charts")
             ]
         ),
         .target(

@@ -26,3 +26,8 @@ extension TargetDependency {
         path: .relativeToRoot("Feature/Settings")
     )
 }
+
+extension Project {
+    public static let productType : ProjectDescription.Product = .staticFramework
+}
+

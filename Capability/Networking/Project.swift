@@ -13,7 +13,9 @@ let project = Project(
             sources: ["Sources/**"],
             dependencies: [
                 .sharedModel,
-                .external(name: "Alamofire")
+                .external(name: "Alamofire"),
+                .external(name: "RxSwift"),
+                .external(name: "RxCocoa"),
             ]
         ),
         .target(

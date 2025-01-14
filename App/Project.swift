@@ -23,7 +23,12 @@ let project = Project(
                 .postsList,
                 .postDetail,
                 .settings,
-                .external(name: "Alamofire")
+                .external(name: "Alamofire"),
+                .external(name: "SnapKit"),
+                .external(name: "RxSwift"),
+                .external(name: "Lottie"),
+                .external(name: "SwiftDate"),
+                .external(name: "Charts")
             ]
         ),
         .target(

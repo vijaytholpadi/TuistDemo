@@ -23,7 +23,11 @@ let project = Project(
                 .sharedModel,
                 .networking,
                 .postDetail,
-                .external(name: "Alamofire")
+                .external(name: "Alamofire"),
+                .external(name: "Lottie"),
+                .external(name: "Charts"),
+                .external(name: "RxSwift"),
+                .external(name: "RxCocoa")
             ]
         ),
         .target(

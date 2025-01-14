@@ -9,7 +9,10 @@ let project = Project(
             product: .framework,
             bundleId: "io.tuist.TuistDemo.SharedModel",
             infoPlist: .default,
-            sources: ["Sources/**"]
+            sources: ["Sources/**"],
+            dependencies: [
+                .external(name: "SwiftDate")
+            ]
         ),
         .target(
             name: "SharedModelTests",
