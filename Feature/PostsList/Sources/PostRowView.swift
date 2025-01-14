@@ -39,3 +39,18 @@ struct PostRowView: View {
         .padding(.vertical, 8)
     }
 }
+
+#Preview {
+    PostRowView(
+        post:
+            Post(
+                id: 1,
+                title: "Hello World",
+                body: "This is a post body",
+                userId: 1,
+                createdAt: Date(),
+                likes: 2,
+                comments: 3
+            )
+    )
+}
