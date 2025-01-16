@@ -77,7 +77,7 @@ public class PostDetailViewController: UIViewController {
         imageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(16)
             make.leading.trailing.equalToSuperview().inset(16)
-            make.height.equalTo(250)
+            make.height.equalTo(0)
         }
 
         titleLabel.snp.makeConstraints { make in
@@ -116,11 +116,11 @@ public class PostDetailViewController: UIViewController {
     }
 }
 
-//#Preview(body: {
-//    PostDetailViewController(
-//        post: Post(id: 1,
-//                   title: "This is a really cool post",
-//                   body: "World",
-//                   userId: 1)
-//    )
-//})
+#Preview {
+    let post = Post(title: "This is PreviewApp post",
+                    body: "This is to demo that it can render long text. ",
+                    userId: 44,
+                    createdAt: Date.now,
+                    comments: 5)
+    return PostDetailViewController(post: post)
+}

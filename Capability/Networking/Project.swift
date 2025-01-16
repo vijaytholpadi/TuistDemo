@@ -9,6 +9,7 @@ let project = Project(
             destinations: .iOS,
             product: .framework,
             bundleId: "io.tuist.TuistDemo.Networking",
+            deploymentTargets: Project.minDeploymentVersion,
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [

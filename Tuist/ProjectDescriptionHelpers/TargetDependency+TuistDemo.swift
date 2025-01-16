@@ -27,7 +27,3 @@ extension TargetDependency {
     )
 }
 
-extension Project {
-    public static let productType : ProjectDescription.Product = .staticFramework
-}
-

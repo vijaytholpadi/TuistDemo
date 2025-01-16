@@ -43,9 +43,7 @@ struct PostRowView: View {
 #Preview {
     PostRowView(
         post:
-            Post(
-                id: 1,
-                title: "Hello World",
+            Post(title: "Hello World",
                 body: "This is a post body",
                 userId: 1,
                 createdAt: Date(),

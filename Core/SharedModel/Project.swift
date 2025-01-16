@@ -1,4 +1,5 @@
 import ProjectDescription
+import ProjectDescriptionHelpers
 
 let project = Project(
     name: "SharedModel",
@@ -8,6 +9,7 @@ let project = Project(
             destinations: .iOS,
             product: .framework,
             bundleId: "io.tuist.TuistDemo.SharedModel",
+            deploymentTargets: Project.minDeploymentVersion,
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [

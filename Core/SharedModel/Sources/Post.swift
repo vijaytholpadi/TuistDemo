@@ -9,7 +9,7 @@ import Foundation
 import SwiftDate
 
 public struct Post: Codable, Identifiable {
-    public let id: Int
+    public let id: UUID = UUID()
     public let title: String
     public let body: String
     public let userId: Int
@@ -17,8 +17,7 @@ public struct Post: Codable, Identifiable {
     public let likes: Int = 2
     public let comments: Int = 3
 
-    public init(id: Int, title: String, body: String, userId: Int, createdAt: Date, likes: Int = 3, comments: Int) {
-        self.id = id
+    public init(title: String, body: String, userId: Int, createdAt: Date, likes: Int = 3, comments: Int) {
         self.title = title
         self.body = body
         self.userId = userId
@@ -30,7 +29,7 @@ public struct Post: Codable, Identifiable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, title, body, userId
+        case title, body, userId
         case createdAt = "created_at"
     }
 }
